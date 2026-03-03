@@ -16,6 +16,7 @@ STRENGTH_LABELS = {
     0: "Very Weak"
 }
 
+# Check password against: https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10k-most-common.txt
 try:
     with open("passwords.txt") as f:
         common_passwords = f.read().splitlines()
