@@ -31,7 +31,6 @@ DEFAULT_PORTS: List[int] = sorted(set(WEB_APP_PORTS + NETWORK_SERVICE_PORTS))
 
 
 def scan_ports(target: str, ports: List[int], timeout: float = 1.0) -> None:
-    """Scan TCP ports on a target host and print open ones."""
     print(f"\nStarting scan on host: {target}")
     print(f"Ports: {ports}")
 
